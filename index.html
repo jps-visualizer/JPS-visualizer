@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Point Search (JPS) Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Jump Point Search (JPS) Visualizer</h1>
+<p class="subtitle">Optimized pathfinding demonstration</p>
+
+<div class="stats-bar">
+    <div>🧭 <strong>Explored:</strong> <span id="explored">0</span></div>
+    <div>⭐ <strong>Path Length:</strong> <span id="pathLength">0</span></div>
+    <div>
+        ⚙️ <strong>Speed:</strong>
+        <input id="speedRange" type="range" min="1" max="80" value="15">
+        <span id="speedLabel">15 ms</span>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="tool-start" class="tool active">Set Start</button>
+    <button id="tool-goal" class="tool">Set Goal</button>
+    <button id="tool-wall" class="tool">Draw Walls</button>
+    <button id="tool-erase" class="tool">Erase</button>
+    <button id="run">Run JPS</button>
+    <button id="clear-path">Clear Path</button>
+    <button id="clear-all">Clear All</button>
+</div>
+
+<div id="grid" class="grid"></div>
+
+<footer>
+    Made by <strong>Kushagra Gupta (24BCE1671) & Riddhima Singhal (24BCE1157) </strong>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
